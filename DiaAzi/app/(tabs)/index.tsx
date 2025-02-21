@@ -1,13 +1,13 @@
 import React from 'react';
-import Api from './services/Api'
+import Api from '../../services/Api';
 import { useState } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
-import { Calendar,} from 'react-native-calendars';
+import { Calendar } from 'react-native-calendars';
 
 export default function Index() {
     return(
         <View style={{justifyContent: 'flex-start', alignItems: 'center',flex:1,gap:20 }}>
-            <Calendar />
+            <Calendar  disableArrowLeft={true} disableArrowRight={true} />
             <View style={s.box1}>
             </View>
             <View style={s.box1}>
